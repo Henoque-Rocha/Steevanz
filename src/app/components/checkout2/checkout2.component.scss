@@ -1,0 +1,345 @@
+.checkout-number {
+    .container {
+        .w100 {
+            .number {
+                span:nth-child(1),
+                span:nth-child(2) {
+                    border-radius: 50%;
+                    margin: 0 15px;
+                    padding: 4px 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    background-color: #FFFFFF;
+                    font-family: Roboto;
+                    border: 1px solid #FFFFFF;
+                    color: #1A1A1A;
+                }
+                span {
+                    border-radius: 50%;
+                    margin: 0 15px;
+                    padding: 4px 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: Roboto;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+.price {
+    height: 70px;
+}
+
+section.main {
+    .container {
+        .title-image {
+            .buttons-2 {
+                margin-top: 40px;
+                a {
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #1A1A1A;
+                    margin: 0 8px;
+                    border-radius: 20px;
+                    border: 1px solid #1A1A1A;
+                    padding: 0 15px;
+                }
+                a:nth-child(1) {
+                    color: white;
+                    background-color: #1A1A1A;
+                }
+            } 
+        }
+    }
+}
+
+section.formGroup {
+    .container {
+        .form-cadastro {
+            width: 65%;
+            .box {
+                display: flex;
+                font-family: Roboto;
+                padding: 20px 8px;
+                input {
+                    margin: 0 10px;
+                }
+            }
+            .group {
+                form {
+                    .row {
+                        justify-content: space-between;
+                        display: flex;
+                        .form-group {
+                            display: flex;
+                            flex-direction: column;
+                            div {
+                                display: flex;
+                                margin: 10px;
+                                flex-direction: column;
+                                label {
+                                    color: #5B5B5B;
+                                    font-family: Roboto;
+                                    padding: 0 5px;
+                                    margin-bottom: 5px;
+                                }
+                                input, select {
+                                    width: 325px;
+                                    font-family: Roboto;
+                                    height: 30px;
+                                    font-size: 17px;
+                                    padding: 0 5px;
+                                    border-bottom: 1px solid #1A1A1A;
+                                    border-top: none;
+                                    border-left: none;
+                                    outline: none;
+                                    border-right: none;
+                                    margin-bottom: 10px;
+                                }
+                                .validation-error {
+                                    p {color: red;font-size: 14px; font-family: Roboto;}
+                                }
+                            }
+                        }
+                    }
+                    
+                    .rua {
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 10px;
+                            label {
+                                color: #5B5B5B;
+                                font-family: Roboto;
+                                padding: 0 5px;
+                                margin-bottom: 5px;
+                            }
+                            input {
+                                width: 100%;
+                                font-family: Roboto;
+                                height: 30px;
+                                font-size: 17px;
+                                padding: 0 5px;
+                                border-bottom: 1px solid #1A1A1A;
+                                border-top: none;
+                                border-left: none;
+                                outline: none;
+                                border-right: none;
+                                margin-bottom: 10px;
+                            }
+                            .validation-error {
+                                p {color: red;font-size: 14px; font-family: Roboto;}
+                            }
+                        }
+                        .rua-2 {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0;
+                            flex-direction: row;
+                            div {
+                                label {
+                                    color: #5B5B5B;
+                                    font-family: Roboto;
+                                    padding: 0 5px;
+                                    margin-bottom: 5px;
+                                }
+                                input {
+                                    width: 320px;
+                                    font-family: Roboto;
+                                    height: 30px;
+                                    font-size: 17px;
+                                    margin-bottom: 10px;
+                                    padding: 0 5px;
+                                    border-bottom: 1px solid #1A1A1A;
+                                    border-top: none;
+                                    border-left: none;
+                                    outline: none;
+                                    border-right: none;
+                                }
+                            }
+                            
+                        }
+                    }
+                }               
+            }
+        }
+    }
+    .form-cupom {
+        width: 45%;
+        margin-left: 40px;
+        justify-content: space-bettewn;
+        flex-wrap: wrap;
+        .presente {
+            div {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                div {
+                    width: 90%;
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px 0;
+                    h3,p {
+                        font-family: Roboto;
+                        text-align: left;
+                        margin-left: 35px;
+                    }
+                    p {
+                        padding: 8px 0;
+                    }
+                    img {
+                        max-width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .textarea {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                width: 100%;
+                label {
+                    width: 90%;
+                    color: #5B5B5B;
+                    font-family: Roboto;
+                }
+                textarea {
+                    width: 90%;
+                    resize: vertical;
+                    height: 120px;
+                    margin: 10px 0;
+                    padding: 5px 5px;
+                    outline: none;
+                    font-family: Roboto;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: 1px solid #1A1A1A;
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                margin: 0 8px;
+                input {
+                    width: 220px;
+                    height: 30px;
+                    margin: 10px 0;
+                    padding: 0 5px;
+                    outline: none;
+                    font-family: Roboto;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-bottom: 1px solid #1A1A1A;
+                }
+                label {
+                    color: #5B5B5B;
+                    font-family: Roboto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1265px) {
+    .formGroup {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .form-cadastro {
+                width: 100%;
+                .group {
+                    form {
+                        .row {
+                            flex-wrap: wrap;
+                            .form-group {
+                                width: 100%;
+                               div {
+                                select {
+                                    width: 100%!important;
+                                }
+                                input {
+                                    width: 100%!important;
+                                }
+                               }
+                            }
+                        }
+                    }
+                }
+            }
+            .form-cupom {
+                width: 100%;
+                margin: 0;
+                .presente {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    div {
+                        min-width: 340px;
+                        max-width: 60%;
+                        div {
+                            h3,p {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .formGroup {
+        .container {
+            .form-cadastro {
+                .group {
+                    form {
+                        .rua {
+                            .rua-2 {
+                                display: flex;
+                                flex-wrap: wrap;
+                                div {
+                                    width: 100%;
+                                    select {
+                                        width: 100%!important;
+                                    }
+                                    input {
+                                        width: 100%!important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formGroup {
+        .container {
+            .form-cadastro {
+                width: 100%!important;
+            }
+        }
+    }
+}

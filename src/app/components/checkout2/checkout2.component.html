@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steevanz</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="Logo"><a routerLink=""><img src="assets/Logo.png" alt="Steevanz"></a></div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><img src="assets/Rede.png" alt="Rede"></a></li>
+                    <li><a href="#"><img src="assets/Contato.png" alt="Contato"></a></li>
+                    <li><a href="#"><img src="assets/Loja.png" alt="Loja"></a></li>
+                </ul>
+                <div class="Menu-desktop">
+                    <img src="assets/Menu.png" alt="Menu">
+                </div>
+            </nav>
+        </div><!--container-->
+    </header><!--header-->
+    <div class="checkout-number">
+        <div class="container">
+            <div class="w100">
+                <div class="title-checkout">
+                    <h2>Checkout</h2>
+                </div><!--title-checkout-->
+                <div class="number">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                </div><!--number-->
+            </div>
+        </div>
+    </div>
+    <div class="delivery-carro">
+            <div class="title-carro">
+                <img src="assets/carro.png" alt="carro">
+                <span>Free delivery in Portugal for amounts over 50€</span>
+        </div>
+    </div>
+    <div class="price">
+        <div class="container">
+            <h2>Total: 50€</h2> <span>per month</span>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="container">
+            <div class="title-image">
+                <div>
+                    <span>1</span> <h2>YOUR DATA</h2>
+                </div>
+                <div class="buttons-2">
+                    <a href="#">PERSONAL</a>
+                    <a href="#">COMPANY</a> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="formGroup">
+        <div class="container">
+            <div class="form-cadastro">
+                <div class="group">
+                    <form (ngSubmit)="Submit()" [formGroup]="CadastroForm" #formDir="ngForm">
+                        <div class="row">
+                            <div class="form-group">
+                                <div>
+                                    <label for="name">FirstName*</label>
+                                    <input type="text" name="name" placeholder="Pedro" formControlName="name" required>
+                                    <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+                                        <p>O Nome é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email">E-mail*</label>
+                                    <input type="email" name="email" formControlName="email" placeholder="pedros@gmail.com" required>
+                                    <div *ngIf="email.invalid && formDir.submitted" class="validation-error">
+                                        <p>O E-mail é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="select">Country*</label>
+                                    <select name="select" id="select" required formControlName="select">
+                                        <option value="Portugal">Portugal</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Unite States">Unite States</option>
+                                    </select>
+                                    <div *ngIf="select.invalid && formDir.submitted" class="validation-error">
+                                        <p>A Opção é Invalida ou Precisa ser Preenchida.</p>
+                                    </div>
+                                </div>
+                            </div><!--form-group-->
+                            <div class="form-group">
+                                <div>
+                                    <label for="lastname">LastName*</label>
+                                    <input type="text" name="lastname" placeholder="Silva" required formControlName="lastname">
+                                    <div *ngIf="lastname.invalid && formDir.submitted" class="validation-error">
+                                        <p>O Sobrenome é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone*</label>
+                                    <input type="text" placeholder="918 456 176" name="phone" required formControlName="phone">
+                                    <div *ngIf="phone.invalid && formDir.submitted" class="validation-error">
+                                        <p>O Número é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="location">Location*</label>
+                                    <input type="text" placeholder="Porto" name="location" required formControlName="location">
+                                    <div *ngIf="location.invalid && formDir.submitted" class="validation-error">
+                                        <p>A Localização é Invalida ou Precisa ser Preenchida.</p>
+                                    </div>
+                                </div>
+                            </div><!--form-group-->
+                        </div><!--row-->
+                        <div class="rua">
+                            <div>
+                                <label for="address">Address*</label>
+                                <input style="width: 100%;" name="address" type="text" placeholder="Av. dos Aliados" formControlName="address">
+                                <div *ngIf="address.invalid && formDir.submitted" class="validation-error">
+                                    <p>O Endereço é Invalido ou Precisa ser Preenchido.</p>
+                                </div>
+                            </div>
+                            <div class="rua-2">
+                                <div>
+                                    <label for="postalCode">Postal Code*</label>
+                                    <input type="text" name="postalCode" placeholder="1234-456" formControlName="postalCode">
+                                    <div *ngIf="postalCode.invalid && formDir.submitted" class="validation-error">
+                                        <p>O Código Postal é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="VATnumber">VAT number*</label>
+                                    <input type="text" name="VATnumber" placeholder="122 334 455" formControlName="VATnumber">
+                                    <div *ngIf="VATnumber.invalid && formDir.submitted" class="validation-error">
+                                        <p>O VAT é Invalido ou Precisa ser Preenchido.</p>
+                                    </div>
+                                </div>
+                            </div><!--div-row-sega-->
+                        </div><!--rua-->
+                    </form>
+                </div><!--group-->
+                <div class="box">
+                    <input type="checkbox" name="check" id="check" formControlName="checkbox">
+                    <p>Add a delivery address different from the billing address.</p>
+                </div>
+            </div><!--form-cadastro-->
+            <div class="form-cupom">
+                <div class="presente">
+                    <div>
+                        <div>
+                            <h3>Is this purchase an offer?</h3>
+                            <p>Add a custom message</p>
+                            <img src="assets/presente.png" alt="presente">
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div>
+                        <label for="from">From*</label>
+                        <input type="text" name="from" placeholder="Sender's name*">
+                    </div>
+                    <div>
+                        <label for="to">To*</label>
+                        <input type="text" name="to" placeholder="Receiver's name*">
+                    </div>
+                    <div class="textarea">
+                        <label for="textarea">Message</label>
+                        <textarea name="textarea" placeholder="Write your message here"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div><!--container-->
+    </section>
+
+    <div class="buttons">
+        <div class="container">
+            <div class="btn-clean">
+                <a routerLink="/checkout1">PREVIOUS</a>
+            </div>
+            <div class="btn-next">
+                <a (click)="Submit()" routerLink="/checkout3">NEXT</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="Logo"><a routerLink=""><img src="assets/Logo.png" alt="Steevanz"></a></div>
+            <div class="links">
+                <div class="links-1">
+                    <ul>
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="links-2">
+                    <ul>
+                        <li><a href="#">Complaints Book</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div><!--links-->
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="assets/facebook.png" alt="facebok"></a></li>
+                    <li><a href="#"><img src="assets/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#"><img src="assets/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="assets/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="#"><img src="assets/youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div><!--social-->
+        </div><!--container-->
+    </footer>
+</body>
+</html>

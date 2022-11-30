@@ -1,0 +1,103 @@
+$Bg-Delivery: background-color #C6B784;
+$font-title: Cormorant;
+$font-p: Roboto;
+
+body,html {
+    height: 100%;
+}
+
+section.main {
+    background-color: #1A1A1A;
+    color: white;
+    min-height: 70vh;
+    height: 100%;
+    padding: 30px;
+    .container {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .w-1 {
+                width: 50%;
+                h2{
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    margin-bottom: 30px;
+                    font-family: Cormorant;
+                }
+                p {
+                    font-size: 18px;
+                    font-weight: lighter;
+                    line-height: 23px;
+                    font-family: Roboto;
+                    margin-bottom: 50px;
+                    width: 510px;
+                }
+                .btn-link {
+                    justify-content: space-between;
+                    display: flex;
+                        div {
+                            span {
+                                font-size: 20px;
+                                font-weight: bold;
+                                font-family: Roboto;
+                                span {
+                                    font-weight: lighter;
+                                    font-size: 16px;
+                                    font-family: Roboto;
+                                    margin-left: 10px;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    div {
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            border: 1px solid white;
+                            padding: 3px 20px;
+                            border-radius: 20px;
+                            font-weight: 400;
+                            font-family: Roboto;
+                            text-align: right;
+                        }
+                        a:hover {
+                            background-color: white;
+                            color: black;
+                            transition: 0.5s;
+                        }
+                    }
+
+                    }
+                    
+                }
+            }
+            .w-2 {
+                width: 50%;
+            }
+        }
+    }
+
+@media screen and (max-width: 1070px){
+    .w-1, .w-2 {
+        width: 100%!important;
+        margin-bottom: 40px;
+        text-align: center;
+        h2 {
+            width: 100%;
+        }
+        p {
+            width: 100%!important;
+        }
+        .btn-link {
+            justify-content: space-around!important;
+        }
+    }
+    section.main {
+        .container {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,186 @@
+.checkout-number {
+    .container {
+        .w100 {
+            .number {
+                span:nth-child(1),
+                span:nth-child(2),
+                span:nth-child(3) {
+                    border-radius: 50%;
+                    margin: 0 15px;
+                    padding: 4px 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    background-color: #FFFFFF;
+                    font-family: Roboto;
+                    border: 1px solid #FFFFFF;
+                    color: #1A1A1A;
+                }
+                span {
+                    border-radius: 50%;
+                    margin: 0 15px;
+                    padding: 4px 8px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    font-family: Roboto;
+                    border: 1px solid #FFFFFF;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+section.Payment {
+    .container {
+        .row {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .w50-1,
+            .w50-2{
+                width: 50%;
+            }
+            .w50-1 {
+                .check-box {
+                    span {
+                        margin: 0 10px;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #1A1A1A;
+                    }
+                }
+                .card {
+                    display: flex;
+                    margin-bottom: 30px;
+                    p {
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #5B5B5B;
+                        padding: 0 10px;
+                    }
+                }
+                div {
+                    form {
+                        .number-Card {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 10px 0;
+                            label {
+                                margin-bottom: 8px;
+                                font-family: Roboto;
+                                color: #5B5B5B;
+                            }
+                            input {
+                                max-width: 400px;
+                                width: 100%;
+                                font-family: Roboto;
+                                padding: 3px 0;
+                                font-size: 20px;
+                                border-bottom: 1px solid #1A1A1A;
+                                border-top: none;
+                                border-right: none;
+                                border-left: none;
+                                outline: none;
+                            }
+                        }
+                        .input-row {
+                            max-width: 400px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            div {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 20px 0;
+                                label {
+                                    margin-bottom: 8px;
+                                    font-family: Roboto;
+                                    color: #5B5B5B;
+                                }
+                                input {
+                                    width: 130px;
+                                    outline: none;
+                                    padding: 3px 0;
+                                    font-size: 20px;
+                                    font-family: Roboto;
+                                    border-bottom: 1px solid #1A1A1A;
+                                    border-top: none;
+                                    border-right: none;
+                                    border-left: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .w50-2 {
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    select {
+                        width: 100%;
+                        max-width: 555px;
+                        height: 40px;
+                        background: #E9E9E9;
+                        border-radius: 5px;
+                        outline: none;
+                        border-top: 1px solid #ccc;
+                        border-left: 1px solid #ccc;
+                        border-right: 3px solid #ccc;
+                        border-bottom: 3px solid #ccc;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    section.Payment {
+        .container {
+            .row {
+                flex-direction: column;
+                .w50-1 {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .card {
+                        flex-direction: column;
+                        margin: 10px 0;
+                    }
+                    form {
+                        text-align: center;
+                        .input-row {
+                            div {
+                                input {
+                                    margin: 0 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .w50-2 {
+                    width: 100%;
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    .price {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
